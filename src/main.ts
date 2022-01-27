@@ -2,11 +2,19 @@
  * @Description: 
  * @Author: zhengqi
  * @Date: 2022-01-27 15:49:00
- * @LastEditTime: 2022-01-27 16:03:05
+ * @LastEditTime: 2022-01-27 16:33:16
  */
-import { createApp } from 'vue'
+import { createApp} from 'vue'
+
 import App from './App.vue'
 import router from './router'
 import store from './store'
-//  ttt
-createApp(App).use(store).use(router).mount('#app')
+
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
+const app = createApp(App)
+
+app.use(ElementPlus)
+
+app.use(store).use(router).mount('#app')
