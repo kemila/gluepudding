@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: zhengqi
  * @Date: 2022-01-27 15:49:00
- * @LastEditTime: 2022-01-27 16:33:16
+ * @LastEditTime: 2022-01-28 09:43:59
  */
 import { createApp} from 'vue'
 
@@ -18,3 +18,6 @@ const app = createApp(App)
 app.use(ElementPlus)
 
 app.use(store).use(router).mount('#app')
+
+
+import './render/index'
