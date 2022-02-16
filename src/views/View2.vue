@@ -5,7 +5,8 @@
  * @LastEditTime: 2022-01-28 08:18:56
 -->
 <template>
-  <div class="Floor">
-    <h1>Floor</h1>
+  <div class="View2">
+    <h1>View2</h1>
   </div>
 </template>
+
