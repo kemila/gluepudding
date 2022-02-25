@@ -1,9 +1,5 @@
-/*
- * @Description: 
- * @Author: zhengqi
- * @Date: 2022-01-27 16:10:21
- * @LastEditTime: 2022-02-09 08:23:58
- */
+import * as turf from '@turf/turf'
+
 const matrix = [
   [0,0,0,0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0,0,0,0],
@@ -16,3 +12,14 @@ const matrix = [
   [0,0,0,0,0,0,0,0,0,0],
   [0,0,0,0,0,0,0,0,0,0],
 ]
+
+const line = turf.lineString([
+  [104.99467, 30.071677],
+  [107.13797, 36.550462],
+  [112.607082, 34.991467]
+]);
+const bbox = turf.bbox(line);
+const bboxPolygon = turf.bboxPolygon(bbox);
+console.log(line);
+console.log(bbox);
+console.log(bboxPolygon);
