@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: zhengqi
  * @Date: 2022-01-27 15:49:00
- * @LastEditTime: 2022-02-25 14:52:16
+ * @LastEditTime: 2022-04-08 11:45:03
  */
 import { createApp} from 'vue'
 
@@ -20,5 +20,7 @@ app.use(ElementPlus)
 app.use(store).use(router).mount('#app')
 
 
-import './render/index'
-import './core/index'
+// import './render/index'
+// import './core/index'
+
+import './plane/index'
